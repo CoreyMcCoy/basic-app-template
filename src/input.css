@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'OverusedGrotesk-VF';
+    src: url('/src/fonts/OverusedGrotesk-VF.woff2') format('woff2'), url('/src/fonts/OverusedGrotesk-VF.woff') format('woff');
+  }
+  
