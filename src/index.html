@@ -3,124 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- add favicon -->
     <link rel="icon" href="./public/favicon.ico" />
-    <title>Protein Cost Calculator</title>
+    <title>Basic App Template</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="font-custom flex flex-col min-h-screen bg-gray-100">
+  <body class="font-custom flex flex-col min-h-screen">
     <nav>
       <div class="container mx-auto flex justify-between items-center p-4">
         <div>
-<<<<<<< HEAD
-          <a href="/src/index.html" class="text-xl font-bold">App template</a>
-=======
-          <a href="#" class="text-xl font-bold">Protein Cost Calculator</a>
->>>>>>> bdfaf6708cfce570f25680006cd3f0d0031a78e7
+          <a href="/src/index.html" class="text-xl font-bold">Basic App template</a>
         </div>
-        <!-- <div>
+        <div>
           <ul class="flex space-x-4">
             <li>
-              <a href="/src/index.html" class="text-gray-500">Home</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-500">About</a>
-            </li>
-            <li>
-              <a href="/src/test.html" class="text-gray-500">Test</a>
+              <a href="#" class="text-gray-500">Link</a>
             </li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </nav>
-    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="max-w-xl mx-auto bg-white rounded-xl shadow-md p-8">
-        <form id="proteinForm" onsubmit="validateForm(event)">
-          <h1 class="text-2xl font-bold text-gray-900 mb-6">
-            Calculate the cost per gram of protein
-          </h1>
-          <div class="space-y-4">
-            <div>
-              <label class="form-control w-full">
-                <div class="label">
-                  <span class="label-text">Protein source</span>
-                </div>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  class="input input-bordered w-full sm:text-sm"
-                />
-              </label>
-            </div>
-            <div>
-              <label class="form-control w-full">
-                <div class="label">
-                  <span class="label-text">Total Cost ($)</span>
-                </div>
-                <input
-                  type="number"
-                  id="totalCost"
-                  step="0.01"
-                  required
-                  class="input input-bordered sm:text-sm"
-                />
-              </label>
-            </div>
-            <div>
-              <label class="form-control w-full">
-                <div class="label">
-                  <span class="label-text">Total Servings</span>
-                </div>
-                <input
-                  type="number"
-                  id="totalServings"
-                  required
-                  class="input input-bordered sm:text-sm"
-                />
-              </label>
-            </div>
-            <div>
-              <label class="form-control w-full">
-                <div class="label">
-                  <span class="label-text">Protein per Serving (g)</span>
-                </div>
-                <input
-                  type="number"
-                  id="proteinPerServing"
-                  required
-                  class="input input-bordered sm:text-sm"
-                />
-              </label>
-            </div>
+    <!-- Hero Section -->
+    <main class="py-16 max-w-5xl mx-auto">
+      <div class="text-center pb-24">
+        <h1 class="text-6xl font-black tracking-tight mb-6">Lead gen for busy realtors</h1>
+        <p class="text-lg mb-10">
+          Really compelling sub-headline goes here that makes them want to read more.
+        </p>
+        <button
+          class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 hover:shadow-lg px-6 py-3 mb-12 text-lg"
+        >
+          Action CTA goes here
+        </button>
+        <p class="text-lg">
+          This is can be social proof, like "Join 1,000+ agents who trust us to fill their
+          pipeline."
+        </p>
+      </div>
 
-            <div>
-              <label class="form-control w-full">
-                <div class="label">
-                  <span class="label-text">Required Protein (g)</span>
-                </div>
-                <input
-                  type="number"
-                  id="requiredProtein"
-                  required
-                  class="input input-bordered sm:text-sm"
-                />
-              </label>
+      <!-- Pain Points Section -->
+      <section class="md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="md:pt-16 order-last md:order-none">
+            <h2 class="mb-8 text-3xl font-bold tracking-tight">
+              Problem or pain-point headline goes here
+            </h2>
+            <ul class="space-y-4 text-lg">
+              <li class="flex items-start">
+                <span class="mr-2">•</span>
+                Riding the feast-or-famine lead rollercoaster
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">•</span>
+                Hoping referrals keep coming
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">•</span>
+                Paying ridiculous fees to Zillow
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">•</span>
+                Spending hours on social media with no results
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">•</span>
+                Wasting money on ads that don't convert
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center order-first md:order-none">
+            <img src="./public/purple-unicorn-waving.png" alt="Purple Image" class="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution Section -->
+      <section class="py-16">
+        <div class="text-center">
+          <h2 class="mb-6 text-3xl font-bold tracking-tight">Solution headline goes here</h2>
+          <div>
+            <p class="mb-8 text-lg">
+              A short paragraph that explains how your service solves their problem.
+            </p>
+            <ul class="grid grid-cols-1 md:grid-cols-4 text-lg mb-10 gap-6">
+              <li
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
+              >
+                Benefit goes here
+              </li>
+              <li
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
+              >
+                Benefit goes here
+              </li>
+              <li
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
+              >
+                Benefit goes here
+              </li>
+              <li
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
+              >
+                Benefit goes here
+              </li>
+            </ul>
+            <button
+              class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 hover:shadow-lg px-6 py-3 mb-12 text-lg"
+            >
+              Action CTA goes here
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Proof Section -->
+      <section class="py-16">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold tracking-tight mb-6">Client testimonial or social proof</h2>
+          <div
+            class="transition ease-in-out delay-150 hover:-translate-y-1 bg-gray-100 rounded-lg hover:shadow-lg p-8"
+          >
+            <p class="mb-4">
+              Add a testimonial here that highlights the main benefit or outcome customers receive.
+              For example: "Every month I wondered where my next deal would come from. Now I have a
+              steady stream of leads and I can focus on closing deals."
+            </p>
+            <p class="font-medium">- Ronda Realtor</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="py-16">
+        <div>
+          <h2 class="text-3xl text-center font-bold tracking-tight mb-6">
+            If your service has steps, add them here
+          </h2>
+          <div class="max-w-3xl mx-auto space-y-12">
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold"
+              >
+                1
+              </div>
+              <div>
+                <h3 class="mb-2 text-xl font-bold">First step in the process</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ratione nihil
+                  accusantium laudantium consectetur quos itaque.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold"
+              >
+                2
+              </div>
+              <div>
+                <h3 class="mb-2 text-xl font-bold">Next step in the process</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto labore
+                  ratione qui quaerat necessitatibus nemo eius.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold"
+              >
+                3
+              </div>
+              <div>
+                <h3 class="mb-2 text-xl font-bold">Last step in the process</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id non molestias
+                  repellat rem laborum laudantium.
+                </p>
+              </div>
             </div>
           </div>
-          <button onclick="calculateAndDisplay()" type="submit" class="btn btn-accent w-full mt-8">
-            Calculate
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="py-16">
+        <div>
+          <h2 class="text-3xl text-center font-bold tracking-tight mb-6">
+            Pricing section goes here
+          </h2>
+          <p class="mb-8 text-center">Compelling sub-text goes here.</p>
+          <div
+            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-lg text-white max-w-2xl mx-auto p-8 bg-purple-600 rounded-lg shadow-sm"
+          >
+            <h3 class="mb-6 text-4xl font-bold">$2,000/mo</h3>
+            <p class="mb-6 text-lg font-medium">List the features:</p>
+            <ul class="space-y-4 mb-6">
+              <li class="flex items-start">Cool feature #1</li>
+              <li class="flex items-start">Cool feature #2</li>
+              <li class="flex items-start">Cool feature #3</li>
+            </ul>
+            <div class="text-center">
+              <button
+                class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-purple-600 bg-white rounded-lg hover:shadow-lg px-6 py-3 mb-6 text-lg"
+              >
+                Action CTA goes here
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA Section -->
+      <section class="px-4 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl text-center font-bold tracking-tight mb-6">
+            Ready for a steady stream of leads?
+          </h2>
+          <button
+            class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 hover:shadow-lg px-6 py-3 mb-12 text-lg"
+          >
+            Action CTA goes here
           </button>
-        </form>
-        <div id="results" class="mt-16"></div>
-      </div>
+        </div>
+      </section>
     </main>
-    <footer class="bg-gray-800 text-base-300 text-center py-4">
+    <footer class="bg-neutral text-base-300 text-center py-4">
       <div class="container mx-auto">
         <p>&copy; 2025 Basic App Template</p>
       </div>
     </footer>
-
-    <script src="calculate.js"></script>
   </body>
 </html>
